@@ -1,0 +1,19 @@
+session_start();
+/*
+echo "hello ";
+if(isset($_SESSION['data'])){
+    echo $_SESSION['data'];
+}*/
+$loginUrl = "login.php";
+$logoutUrl = "logout.php";
+
+echo "Hello World! ";
+if(isset($_SESSION['username'])){
+    echo $_SESSION['username'];
+    echo "</br>";
+    echo "<a href='$logoutUrl'>Logout</a>";
+}else{
+    echo "Guest";
+    echo "</br>";
+    echo "<a href='$loginUrl'>Login</a>";
+}
