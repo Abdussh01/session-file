@@ -4,10 +4,10 @@ $email = $_post['email']??'';
 $password = $post['password']??'';
 $errorMessage = '';
 
-if($email == 'john@doe.com'&& $password == '12345'){
+if($email == 'princeasif@gmail.com'&& $password == '12345'){
     $_SESSION['username'] = 'johndoe';
     header('Location:index.php');
-}else if ($email == 'jane@doe.com'&& $password == '12345'){
+}else if ($email == 'princeasif@gmail.com'&& $password == '12345'){
     $_SESSION['username'] = 'janedoe';
     header('Location:index.php');
 }else if($email != '' || $password != ''){
